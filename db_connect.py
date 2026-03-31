@@ -16,6 +16,8 @@ def db_connect():
     
     
     # 创建数据库引擎
+    db_user = 'all_stock'
+    db_password = "SySZTdo7Ou5mmP0R"
     db_user = st.secrets["db_user"]
     db_password = st.secrets["db_password"]
     # secret_value_0  # 替换为您的密码
