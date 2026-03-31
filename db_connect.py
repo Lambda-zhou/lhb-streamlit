@@ -5,6 +5,7 @@
 import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy import create_engine, text
+import streamlit as st
 # from kaggle_secrets import UserSecretsClient
 
 
@@ -15,8 +16,8 @@ def db_connect():
     
     
     # 创建数据库引擎
-    db_user = ''
-    db_password = ''
+    db_user = st.secrets["db_user"]
+    db_password = st.secrets["db_password"]
     # secret_value_0  # 替换为您的密码
     db_host = 'mysql2.sqlpub.com'  # 如果您的数据库在其他主机上，请更改为相应的主机名或IP
     db_port = '3307'
