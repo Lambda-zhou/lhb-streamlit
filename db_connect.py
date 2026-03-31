@@ -9,6 +9,8 @@ from sqlalchemy import create_engine, text
 
 
 def db_connect():
+    db_user = ''
+    db_password = ''
     # user_secrets = UserSecretsClient()
     secret_value_0 = ""
     # user_secrets.get_secret("all_stock")
