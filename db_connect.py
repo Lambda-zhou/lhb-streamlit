@@ -9,14 +9,14 @@ from sqlalchemy import create_engine, text
 
 
 def db_connect():
-    db_user = ''
-    db_password = ''
     # user_secrets = UserSecretsClient()
     secret_value_0 = ""
     # user_secrets.get_secret("all_stock")
     
     
     # 创建数据库引擎
+    db_user = ''
+    db_password = ''
     # secret_value_0  # 替换为您的密码
     db_host = 'mysql2.sqlpub.com'  # 如果您的数据库在其他主机上，请更改为相应的主机名或IP
     db_port = '3307'
